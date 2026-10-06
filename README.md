@@ -2,6 +2,8 @@
 
 An English-language weekly guide to K League 1, designed with the restraint, texture and negative space of Korean ink painting and calligraphy.
 
+Live site: <https://kbgoingup-glitch.github.io/K-LEAGUE/>
+
 ## What is included
 
 - Current K League 1 table
