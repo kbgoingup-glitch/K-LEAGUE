@@ -1,43 +1,49 @@
 const standings=[
-  ["FC Seoul",30,19,5,6,"+31",62,"#b42a2f"],["Ulsan HD",30,14,5,11,"+5",47,"#1660a8"],["Jeju SK",30,12,10,8,"+6",46,"#ee6b19"],["Jeonbuk Hyundai Motors",30,11,11,8,"+10",44,"#1d7048"],["Gangwon FC",30,10,13,7,"+8",43,"#e46c2f"],["Daejeon Hana Citizen",30,10,10,10,"+9",40,"#7a1847"],["Pohang Steelers",30,11,7,12,"−6",40,"#b51e2e"],["Incheon United",30,10,9,11,"+3",39,"#2762a4"],["FC Anyang",30,9,11,10,"−9",38,"#6b2e83"],["Gimcheon Sangmu",30,5,18,7,"−6",33,"#b3282d"],["Bucheon FC 1995",30,7,11,12,"−9",32,"#bd1c2d"],["Gwangju FC",30,1,12,17,"−42",15,"#edca2f"]
+  ["FC Seoul",33,20,7,6,"+32",67,"#b42a2f"],["Ulsan HD",33,15,6,12,"+5",51,"#1660a8"],["Daejeon Hana Citizen",33,13,10,10,"+12",49,"#7a1847"],["Jeonbuk Hyundai Motors",33,12,12,9,"+10",48,"#1d7048"],["Gangwon FC",33,11,15,7,"+10",48,"#e46c2f"],["Incheon United",33,12,10,11,"+8",46,"#2762a4"],["Jeju SK",33,12,10,11,"+2",46,"#ee6b19"],["FC Anyang",33,10,13,10,"−8",43,"#6b2e83"],["Pohang Steelers",33,11,9,13,"−9",42,"#b51e2e"],["Gimcheon Sangmu",33,5,19,9,"−8",34,"#b3282d"],["Bucheon FC 1995",33,7,11,15,"−15",32,"#bd1c2d"],["Gwangju FC",33,3,12,18,"−39",21,"#edca2f"]
 ];
 
 const matches=[
-  {date:"19 SEP · R30",venue:"Bucheon Stadium",home:"Bucheon 1995",away:"Gimcheon Sangmu",score:"0 — 2",events:"Go Jae-hyun 77′ (Lee Kang-hyun); Park Se-jin 86′ (unassisted)",verdict:"Gimcheon waited, struck twice late, and finally broke their winless run.",mom:"Go Jae-hyun",reason:"Broke the deadlock and turned patience into three points.",accent:"#b3282d"},
-  {date:"19 SEP · R30",venue:"Anyang Stadium",home:"FC Anyang",away:"Ulsan HD",score:"2 — 1",events:"Matheus Oliveira 27′ (Knežević); Lee Dong-gyeong 54′ (Yago); Herculano 61′ pen.",verdict:"Anyang’s compact counterpunch knocked down second-placed Ulsan.",mom:"Matheus Oliveira",reason:"Scored the opener and drove Anyang’s most dangerous transitions.",accent:"#6b2e83"},
-  {date:"20 SEP · R30",venue:"Gangneung Stadium",home:"Gangwon FC",away:"Jeju SK",score:"0 — 1",events:"Italo 36′ (Kim Shin-jin)",verdict:"One clean combination was enough for Jeju to keep climbing.",mom:"Italo",reason:"Finished the game’s decisive move with composure.",accent:"#ee6b19"},
-  {date:"20 SEP · R30",venue:"Jeonju World Cup Stadium",home:"Jeonbuk",away:"Gwangju FC",score:"2 — 2",events:"Tiago Orobó 35′ (Kim Young-bin), 78′ (Cho Wi-je); Kim Tae-hyun 44′ o.g.; Iredale 90+1′ (unassisted)",verdict:"Gwangju stole a point at the death after Tiago twice put Jeonbuk ahead.",mom:"Tiago Orobó",reason:"Two goals, two leads and the night’s dominant attacking display.",accent:"#1d7048"},
-  {date:"20 SEP · R30",venue:"Incheon Football Stadium",home:"Incheon United",away:"Daejeon Hana",score:"1 — 1",events:"Morgan Ferrier 35′ (unassisted); Kang Yoon-sung 90+2′ (Lee Myung-jae)",verdict:"Incheon owned the lead; Daejeon owned the final word.",mom:"Morgan Ferrier",reason:"Set the tempo, scored and remained Incheon’s sharpest threat.",accent:"#2762a4"},
-  {date:"20 SEP · R30",venue:"Pohang Steel Yard",home:"Pohang Steelers",away:"FC Seoul",score:"2 — 1",events:"Kento Nishiya 3′ (Wanderson); Hwang Seo-woong 39′ (unassisted); Klimala 51′ pen.",verdict:"Pohang’s fearless first half handed the runaway leaders a rare defeat.",mom:"Kento Nishiya",reason:"An early goal and relentless work set Pohang’s upset in motion.",accent:"#b51e2e"},
-  {date:"27 SEP · R22",venue:"Gangneung High1 Arena",home:"Gangwon FC",away:"Incheon United",score:"0 — 0",events:"No goals · No assists",verdict:"A bruising midfield stalemate in which both back lines refused to bend.",mom:"Marko Tući",reason:"The highest-rated defender in a match decided by clean-sheet discipline.",accent:"#343434"}
+  {date:"24 OCT · R33",venue:"Ulsan Munsu Stadium",home:"Ulsan HD",away:"Pohang Steelers",score:"2 — 2",events:"Wanderson 2′ (Jorge); Kim Seung-ho 25′ (Kento Nishiya); Kim Young-gwon 61′ (Lee Dong-gyeong); Lee Dong-gyeong 68′ (unassisted)",verdict:"Pohang landed two early derby blows, but Ulsan’s captain and creator pulled the East Coast classic level.",mom:"Lee Dong-gyeong",reason:"One assist and one goal powered Ulsan’s two-goal comeback.",accent:"#1660a8"},
+  {date:"24 OCT · R33",venue:"Anyang Stadium",home:"FC Anyang",away:"Jeonbuk Hyundai",score:"1 — 1",events:"Kim Woon 45+2′ (Matheus Oliveira); Tiago Orobó 90+3′ (Kim Jin-gyu)",verdict:"Anyang were seconds from a landmark win before Tiago rescued Jeonbuk with the last word.",mom:"Tiago Orobó",reason:"Delivered the stoppage-time equaliser when Jeonbuk needed it most.",accent:"#1d7048"},
+  {date:"24 OCT · R33",venue:"Bucheon Stadium",home:"Bucheon FC 1995",away:"Gwangju FC",score:"0 — 3",events:"John Iredale 45+2′ (Adriel Ba Loua), 65′ (Adriel Ba Loua); Adriel Ba Loua 60′ (Shin Chang-moo)",verdict:"Gwangju turned the regular-season finale into a ruthless three-goal away statement.",mom:"John Iredale",reason:"His clinical brace framed Gwangju’s biggest away performance of the run-in.",accent:"#edca2f"},
+  {date:"24 OCT · R33",venue:"Gimcheon Stadium",home:"Gimcheon Sangmu",away:"Daejeon Hana",score:"1 — 2",events:"Diogo 51′ (Kim Bong-soo); Jeong Jae-min 73′ (Min Kyung-hyun); Gustav Ludwigson 90+6′ (unassisted)",verdict:"Daejeon stole second-half control and then stole all three points at the final breath.",mom:"Gustav Ludwigson",reason:"Settled a tense contest with a dramatic 96th-minute winner.",accent:"#7a1847"},
+  {date:"24 OCT · R33",venue:"Incheon Football Stadium",home:"Incheon United",away:"Jeju SK",score:"3 — 1",events:"Lee Myung-joo 59′ (Stefan Mugoša); Emerson Negueba 72′ (unassisted); Lee Dong-ryul 81′ (unassisted); Lee Chung-yong 90+2′ (Morgan Ferrier)",verdict:"Incheon punished ten-man Jeju late and seized the final place in Final A.",mom:"Lee Myung-joo",reason:"Opened the scoring and dictated the midfield in Incheon’s top-six clincher.",accent:"#2762a4"},
+  {date:"24 OCT · R33",venue:"Seoul World Cup Stadium",home:"FC Seoul",away:"Gangwon FC",score:"1 — 1",events:"Moon Seon-min 59′ (Anderson); Kang Jun-hyuk 65′ (Kim Dae-won)",verdict:"The match finished level, but Seoul’s ten-year wait ended with a seventh league crown.",mom:"Gu Sung-yun",reason:"A first-half penalty save kept Seoul on course for the point that sealed the title.",accent:"#b42a2f"}
 ];
 
 const fixtures=[
-  ["FRI · 09 OCT · 14:00","Daejeon Hana","Jeonbuk Hyundai","Daejeon World Cup Stadium"],
-  ["FRI · 09 OCT · 16:30","Gangwon FC","Bucheon 1995","Gangneung Stadium"],
-  ["FRI · 09 OCT · 16:30","Incheon United","Pohang Steelers","Incheon Football Stadium"],
-  ["SAT · 10 OCT · 16:30","Gimcheon Sangmu","FC Anyang","Gimcheon Stadium"],
-  ["SUN · 11 OCT · 14:00","Gwangju FC","Ulsan HD","Gwangju World Cup Stadium"]
+  ["SAT · 31 OCT · 16:30","Gwangju FC","Gimcheon Sangmu","Gwangju World Cup Stadium"],
+  ["SUN · 01 NOV · 14:00","Pohang Steelers","Jeju SK","Pohang Steel Yard"],
+  ["SUN · 01 NOV · 14:00","Ulsan HD","Gangwon FC","Ulsan Munsu Stadium"],
+  ["SUN · 01 NOV · 16:30","FC Seoul","Incheon United","Seoul World Cup Stadium"],
+  ["SUN · 01 NOV · 16:30","FC Anyang","Bucheon FC 1995","Anyang Stadium"]
 ];
 
 const photos={
-  "Yago Cariello":"https://midias.correio24horas.com.br/2025/06/01/yago-cariello-ulsan-hd--2749361.png",
-  "Patryk Klimala":"https://1293613113.rsc.cdn77.org/medium_Gsaz5_A6_Wo_AAFW_Km_acaf618151.webp",
-  "Stefan Mugoša":"https://www.incheon.go.kr/data/editor/20250906/202509061029533961.jpg",
-  "Matheus Oliveira":"https://assets.sorare.com/playerpicture/dde5f480-784f-40de-b729-824c041cf2e7/picture/squared-192a226d1d3d40ce99f511b383d14ced.png",
-  "Lee Dong-gyeong":"https://i3n.news1.kr/system/photos/2025/10/29/7570804/high.jpg",
-  "Jefferson Galego":"https://www.chosun.com/resizer/v2/MY3DAMLEME4GGNTDGEZTGYRXGM.jpg?auth=17bff6410d4b0d2402cd72908dc16f95553d63b0e04980080c3ef6e97b7ba9ab&height=665&smart=true&width=530",
-  "Lee Ho-jae":"https://www.news1.kr/_next/image?q=75&url=https%3A%2F%2Fi3n.news1.kr%2Fsystem%2Fphotos%2F2026%2F1%2F12%2F7693482%2Fhigh.jpg&w=828",
-  "Jeong Seung-won":"https://t1.daumcdn.net/media/img-section/sports13/player/6/20160099.jpg",
-  "Lee Myung-jae":"https://thumb.mtstarnews.com/21/2025/06/2025062511074643030_1.jpg",
-  "Moon Seon-min":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K09/player_20170229.png"
+  "Yago Cariello":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K01/player_20230315.png",
+  "Patryk Klimala":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K09/player_20250331.png",
+  "Stefan Mugoša":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K18/player_20180196.png",
+  "Matheus Oliveira":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K27/player_20240078.png",
+  "Lee Dong-gyeong":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K01/player_20180088.png",
+  "Tiago Orobó":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K05/player_20220244.png",
+  "John Iredale":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K22/player_20250193.png",
+  "Kim Dae-won":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K21/player_20160098.png",
+  "Jefferson Galego":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K26/player_20220353.png",
+  "Emerson Negueba":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K04/player_20260228.png",
+  "Lee Myung-jae":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K10/player_20140041.png",
+  "Moon Seon-min":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K09/player_20170229.png",
+  "Lee Young-jae":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K05/player_20150104.png",
+  "Jeong Seung-won":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K09/player_20160099.png",
+  "Anderson":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K09/player_20240179.png",
+  "Ivan Jukić":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K27/player_20250365.png",
+  "Adriel Ba Loua":"https://d2tfp74nsbbrkr.cloudfront.net/v1/player/2026/K22/player_20260347.png"
 };
 
 const scorers=[
-  ["Yago Cariello","Ulsan HD",13],["Patryk Klimala","FC Seoul",13],["Stefan Mugoša","Incheon United",12],["Matheus Oliveira","FC Anyang",12],["Lee Dong-gyeong","Ulsan HD",11],["Jefferson Galego","Bucheon 1995",10],["Lee Ho-jae","Pohang Steelers",8],["Jeong Jae-hee","Daejeon Hana",8],["Abdallah Hleihel","Gangwon FC",8],["Kim Dae-won","Gangwon FC",8]
+  ["Yago Cariello","Ulsan HD",16],["Patryk Klimala","FC Seoul",16],["Stefan Mugoša","Incheon United",14],["Matheus Oliveira","FC Anyang",12],["Lee Dong-gyeong","Ulsan HD",12],["Tiago Orobó","Jeonbuk Hyundai",11],["John Iredale","Gwangju FC",10],["Kim Dae-won","Gangwon FC",10],["Jefferson Galego","Bucheon FC 1995",10],["Emerson Negueba","Jeju SK",9]
 ];
 const assists=[
-  ["Lee Dong-gyeong","Ulsan HD",10],["Kim Dae-won","Gangwon FC",8],["Lee Myung-jae","Daejeon Hana",7],["Moon Seon-min","FC Seoul",6],["Jeong Seung-won","FC Seoul",6],["Rodrigo Bassani","Bucheon 1995",5],["Mo Jae-hyeon","Gangwon FC",5],["Diogo","Daejeon Hana",5],["Anderson","FC Seoul",5],["Matheus Oliveira","FC Anyang",5]
+  ["Lee Dong-gyeong","Ulsan HD",13],["Kim Dae-won","Gangwon FC",9],["Lee Myung-jae","Daejeon Hana",8],["Moon Seon-min","FC Seoul",8],["Lee Young-jae","Jeonbuk Hyundai",7],["Jeong Seung-won","FC Seoul",7],["Anderson","FC Seoul",6],["Matheus Oliveira","FC Anyang",6],["Ivan Jukić","FC Anyang",5],["Adriel Ba Loua","Gwangju FC",5]
 ];
 
 const initials=name=>name.split(/\s+/).map(x=>x[0]).join("").slice(0,2).toUpperCase();
